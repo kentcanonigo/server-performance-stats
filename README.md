@@ -1,14 +1,65 @@
 # server-performance-stats
-Practice project for roadmap.sh
 
-# The project source
-https://roadmap.sh/projects/server-stats
+A simple Bash script to display real-time server performance statistics. Built as a practice project for [roadmap.sh](https://roadmap.sh/projects/server-stats).
 
-# Requirements
-## You are required to write a script server-stats.sh that can analyse basic server performance stats. You should be able to run the script on any Linux server and it should give you the following stats:
-Total CPU usage
-Total memory usage (Free vs Used including percentage)
-Total disk usage (Free vs Used including percentage)
-Top 5 processes by CPU usage
-Top 5 processes by memory usage
-Stretch goal: Feel free to optionally add more stats such as os version, uptime, load average, logged in users, failed login attempts etc.
+## 📋 Features
+
+The `server-stats.sh` script provides the following information when run on any standard Linux system:
+
+* **CPU Usage**
+  Displays total CPU usage across all cores.
+
+* **Memory Usage**
+  Shows used vs. free memory, including percentage usage.
+
+* **Disk Usage**
+  Displays used vs. free disk space across mounted volumes, including percentage usage.
+
+* **Top 5 Processes by CPU Usage**
+  Lists the 5 most CPU-intensive processes currently running.
+
+* **Top 5 Processes by Memory Usage**
+  Lists the 5 most memory-intensive processes currently running.
+
+## 🚀 Stretch Goals (Optional Enhancements)
+
+These are extra stats you can include to expand the script:
+
+* OS version and kernel
+* System uptime
+* Load average
+* Currently logged-in users
+* Recent failed login attempts
+* Network interface statistics
+* Process count and zombie processes
+
+## 🛠 Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/server-performance-stats.git
+   cd server-performance-stats
+   ```
+
+2. Make the script executable:
+
+   ```bash
+   chmod +x server-stats.sh
+   ```
+
+3. Run the script:
+
+   ```bash
+   ./server-stats.sh
+   ```
+
+> **Note:** The script uses standard Unix tools (`top`, `df`, `free`, `ps`, etc.) and should work on most Linux distributions out of the box.
+
+## 📎 Project Link
+
+This project is part of the [roadmap.sh projects collection](https://roadmap.sh/projects/server-stats).
+
+## 🧾 License
+
+This project is licensed under the MIT License.
